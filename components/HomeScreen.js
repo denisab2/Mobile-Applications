@@ -5,7 +5,8 @@ import {
   Text,
   Button,
   View,ListView, TouchableOpacity,
-  TextInput
+  TextInput,
+  Linking
 } from 'react-native';
 
 import storageService from '../services/StorageService';
@@ -71,6 +72,13 @@ export default class HomeScreen extends Component {
         <Button
           onPress={() => this.props.navigation.navigate('Create', {update: this.update.bind(this), products: this.state.products})}
           title="Add new"
+        />
+        <TextInput style={{fontSize: 20}} value={this.state.email} placeholder="Email:"
+                  onChangeText={(text) => this.setState({email: text})}>
+        </TextInput>
+        <Button
+          onPress={() => Linking.openURL('mailto:' + this.state.email)}
+          title="Send mail"
         />
       </View>
 
