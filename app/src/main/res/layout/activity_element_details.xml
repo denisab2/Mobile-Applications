@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.deni.labmobile.ElementDetailsActivity">
+    tools:context="com.example.deni.labmobile.Activity.ElementDetailsActivity">
 
     <TextView
         android:id="@+id/textView6"
@@ -86,6 +86,17 @@
         android:layout_below="@+id/editQuantity"
         android:layout_marginTop="31dp"
         android:onClick="pressDone"
-        android:text="Done" />
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/deletebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonDone"
+        android:layout_alignStart="@+id/buttonDone"
+        android:layout_below="@+id/buttonDone"
+        android:layout_marginTop="68dp"
+        android:onClick="pressDelete"
+        android:text="Delete" />
 
 </RelativeLayout>

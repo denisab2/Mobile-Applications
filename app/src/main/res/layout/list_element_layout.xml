@@ -10,9 +10,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="47dp"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="25dp"
         android:text="nume" />
 
     <TextView
@@ -32,10 +32,9 @@
         android:layout_alignBottom="@+id/priceprodus"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
         android:text="quan" />
-
 
 
 </RelativeLayout>
